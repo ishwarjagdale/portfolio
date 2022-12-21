@@ -8,7 +8,7 @@ export default function Work() {
         <>
             <div className={"flex flex-col items-center max-w-[1000px] pt-16 pb-32 w-full"}>
                 <div className={"flex items-center w-full header-line pb-16"}>
-                    <span className={"accent mr-4 text-xl font-monospace"}>03.</span><h3 className={"text-2xl slate font-[600]"}>Some Things I've Built</h3>
+                    <span className={"accent mr-4 text-xl font-monospace"}>03.</span><h3 className={"text-2xl whitespace-nowrap slate font-[600]"}>Some Things I've Built</h3>
                 </div>
                 <FeaturedProject
                     image={Hal}
@@ -39,7 +39,7 @@ export default function Work() {
                     <h3 className={"text-2xl slate mb-[10px] font-[600]"}>Other Noteworthy Projects</h3>
                     <a href={"https://github.com/ishwarjagdale"} className={"accent text-sm font-monospace"}>view the archive</a>
                 </div>
-                <div className={"grid grid-cols-3 gap-4 w-full"}>
+                <div className={"grid md:grid-cols-3 gap-4 w-full"}>
                     <Project
                         title={"Integrating Algolia Search with WordPress Multisite"}
                         description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}

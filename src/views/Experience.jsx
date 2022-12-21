@@ -60,7 +60,7 @@ export default function Experience() {
         <>
             <div className={"flex flex-col text-left items-center max-w-[1000px] pt-16 pb-32 w-full"}>
                 <div className={"flex items-center w-full header-line pb-16"}>
-                    <span className={"accent mr-4 text-xl font-monospace"}>02.</span><span className={"text-2xl slate font-Poppins font-[600]"}>Experience & Achievements</span>
+                    <span className={"accent mr-4 text-xl font-monospace"}>02.</span><span className={"text-2xl whitespace-nowrap slate font-Poppins font-[600]"}>Experience & Achievements</span>
                 </div>
                 <p className={"dark-slate w-full mb-2 leading-7"}>
                     As in 2022, I have almost 5-6 years of non-professional experience. I'm a self-learned programmer, Python, HTML & CSS being my initial stack I further learned C, Java, JavaScript, and SQl.
@@ -69,12 +69,11 @@ export default function Experience() {
                     and gained experience by building full stack web applications with variety of frameworks like <a href={"https://flask.palletsprojects.com/en/2.2.x/"}>Flask</a> in Python,
                     React and Express in Javascript.
                 </p>
-                <p className={"ghost-white text-sm w-full mt-12 leading-7"}>* Currently looking for new work opportunities</p>
-                <div className={"flex w-full mt-2"}>
-                    <ul className={"flex flex-col text-sm slate-alt font-monospace mr-6 work-list"}>
+                <div className={"flex flex-col md:flex-row w-full mt-12"}>
+                    <ul className={"flex md:flex-col text-sm slate-alt overflow-x-scroll font-monospace mr-6 work-list mb-8 md:mb-0"}>
                         {
                             Object.keys(work).map((k, i) => {
-                                return <li onClick={() => setActiveTab(i)} className={`p-3 px-6 cursor-pointer ${activeTab === i ? "active-item": ""}`}>{k}</li>
+                                return <li onClick={() => setActiveTab(i)} className={`p-3 px-6 cursor-pointer border-b-2 md:border-b-0 md:border-l-2 ${activeTab === i ? "active-item": ""}`}>{k}</li>
                             })
                         }
                     </ul>
@@ -99,14 +98,14 @@ export default function Experience() {
                 <div className={"flex items-center justify-center w-full pt-28 pb-8"}>
                     <h3 className={"text-2xl slate font-[600]"}>Certifications</h3>
                 </div>
-                <ul className={"flex w-full flex-col text-md slate font-monospace mr-6 cert-list"}>
+                <ul className={"flex w-full flex-col text-md slate font-monospace cert-list"}>
                     {
                         Object.keys(certifications).map((k, i) => {
                             return <li onClick={() => setActiveTab(i)} className={`p-3 px-6 cursor-pointer`}>
                                 <a href={certifications[k].url} target={"_blank"} rel="noreferrer" >
                                     <i className={`mr-4 w-[20px] text-center accent fab fa-${certifications[k].font}`}/>
                                     <span>{k}</span>
-                                    <span className={"ml-2 text-sm slate-alt"}>- {certifications[k].provider}</span>
+                                    <span className={"ml-2 hidden md:block text-sm slate-alt"}>- {certifications[k].provider}</span>
                                 </a>
                             </li>
                         })

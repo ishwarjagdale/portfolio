@@ -1,9 +1,9 @@
 export default function About() {
     return (
         <>
-            <div className={"flex flex-col text-left items-center max-w-[1000px] pt-16 pb-32 w-full"}>
+            <div className={"flex flex-col text-md text-left items-center max-w-[1000px] pt-16 pb-32 w-full"}>
                 <div className={"flex items-center w-full header-line pb-16"}>
-                    <span className={"accent mr-4 text-xl font-monospace"}>01.</span><span className={"text-2xl slate font-Poppins font-[600]"}>About me</span>
+                    <span className={"accent mr-4 text-xl font-monospace"}>01.</span><span className={"text-2xl whitespace-nowrap slate font-Poppins font-[600]"}>About me</span>
                 </div>
                 <p className={"dark-slate w-full mb-4 leading-7"}>
                     Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!

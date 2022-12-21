@@ -60,6 +60,9 @@ i, a {
   color: #64ffda;
   opacity: 100%;
 }
+.p-img {
+  filter: blur(4px) brightness(50%);
+}
 .hover-btn:hover {
   background: rgba(100,255,218,0.1);
 }
@@ -108,9 +111,12 @@ i, a {
   left: 0;
   color: #64ffda;
 }
-.work-list li{
-  border-left: 2px solid #233554;
-  border-right-radius: 4px;
+.work-list li {
+  white-space: nowrap;
+  border-color: #233554;
+}
+.work-list::-webkit-scrollbar {
+  height: 4px;
 }
 .work-list li:hover, .cert-list li:hover {
   color: #64ffda;
@@ -123,7 +129,7 @@ i, a {
 .active-item {
   color: #64ffda;
   background: #112240;
-  border-left: 2px solid #64ffda!important;
+  border-color: #64ffda!important;
 }
 p > a {
   color: #64ffda;
