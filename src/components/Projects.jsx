@@ -12,7 +12,7 @@ export default function Project({title, description, links, tags}) {
                     }
                 </div>
             </div>
-            <span className={"slate pt-6 font-[Poppins] cursor-default font-[600]"}>{title}</span>
+            <h4 className={"slate pt-6 cursor-default font-[600]"}>{title}</h4>
             <p className={`dark-slate pt-2 text-sm cursor-default`}>
                 {description}
             </p>

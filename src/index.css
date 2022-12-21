@@ -10,10 +10,6 @@ body {
   color: white;
   overflow-x: hidden;
 }
-* {
-  transition: all 0.3s ease;
-}
-
 
 ::-webkit-scrollbar {
   width: 4px;
@@ -31,7 +27,7 @@ body {
 }
 
 
-i {
+i, a {
   transition: all 0.3s ease;
 }
 #root {
@@ -69,7 +65,6 @@ i {
 }
 .hover-displace:hover {
   translate: 0 -4px;
-  transition: all 0.3s ease;
 }
 .translate-8:hover {
   translate: 0 -8px;
@@ -113,16 +108,38 @@ i {
   left: 0;
   color: #64ffda;
 }
-.work-list li {
+.work-list li{
   border-left: 2px solid #233554;
   border-right-radius: 4px;
 }
-.work-list li:hover {
+.work-list li:hover, .cert-list li:hover {
   color: #64ffda;
   background: #112240;
+}
+.cert-list li > a {
+  display: flex;
+  align-items: center;
 }
 .active-item {
   color: #64ffda;
   background: #112240;
   border-left: 2px solid #64ffda!important;
+}
+p > a {
+  color: #64ffda;
+}
+.ghost-white {
+  color: ghostwhite;
+}
+p, ul {
+  font-family: Inter, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins, sans-serif;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
 }
