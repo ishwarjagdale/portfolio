@@ -16,10 +16,10 @@ export default function Project({title, description, links, tags}) {
             <p className={`dark-slate pt-2 text-sm cursor-default`}>
                 {description}
             </p>
-            <ul className={"flex cursor-default items-center text-sm mt-6 dark-slate opacity-60 font-monospace"}>
+            <ul className={"flex cursor-default items-center flex-wrap text-sm mt-6 dark-slate opacity-60 font-monospace"}>
                 {
                     tags.map((t, i) => {
-                        return <li key={i} className={'mr-5'}>{t}</li>
+                        return <li key={i} className={'whitespace-nowrap mr-5'}>{t}</li>
                     })
                 }
             </ul>

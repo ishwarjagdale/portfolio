@@ -4,7 +4,7 @@ export default function FeaturedProject({image, title, description, tags, links,
             <img src={image} className={`absolute ${orientation ? "left-0" : "right-0"} h-full md:h-auto md:w-full blur-sm brightness-50 md:brightness-100 md:blur-0 object-cover md:object-contain md:max-w-[60%] drop-shadow`} alt={"Hal"}/>
             <div className={`flex flex-col p-8 md:p-0 z-10 ${orientation ? "md:items-end" : "md:items-start"} w-full`}>
                 <span className={"font-monospace text-sm cursor-default accent mb-2"}>Featured Project</span>
-                <h3 className={"cursor-pointer slate hover-accent text-2xl font-[600]"}>{title}</h3>
+                <a href={Object.values(links)[0]}><h3 className={"cursor-pointer slate hover-accent text-2xl font-[600]"}>{title}</h3></a>
                 <p className={`cursor-default md:bg-[#112240] rounded py-6 md:px-6 max-w-[500px] dark-slate text-[15px] ${orientation ? "md:text-right" : "md:text-left"} my-4 drop-shadow-xl`}>
                     {description}
                 </p>

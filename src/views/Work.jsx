@@ -12,25 +12,24 @@ export default function Work() {
                 </div>
                 <FeaturedProject
                     image={Hal}
-                    title={"Halcyon Theme"}
+                    title={"SysMon - System Monitoring Tool"}
                     description={
-                        "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm."
+                        "A system monitoring tool which works in a network or over internet. It looks over available system resources' performance, generate logs and alerts user on any abnormality."
                     }
-                    tags={["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"]}
-                    links={{"fab fa-github": "", "fas fa-external-link": ""}}
+                    tags={["Python-Flask", "React", "Tailwind", "Sockets"]}
+                    links={{"fab fa-github": "https://github.com/ishwarjagdale/sys.mon", "fas fa-external-link": "https://sys-mon.pages.dev/"}}
                 />
                 <FeaturedProject
                     image={Spotify}
-                    title={"Spotify Profile"}
+                    title={"Journal - Medium Clone"}
                     description={
-                        "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+                        "This is a simple clone of medium.com created using ReactJS, TailwindCSS, Flask-Python (Backend), Google Photos API"
                     }
                     tags={["React",
-                        "Styled Components",
-                        "Express",
-                        "Spotify API"
-                        , "Heroku"]}
-                    links={{"fab fa-github": "", "fas fa-external-link": ""}}
+                        "Python",
+                        "Postgres",
+                        "Google Cloud"]}
+                    links={{"fab fa-github": "https://github.com/ishwarjagdale/journal"}}
                     orientation={0}
                 />
             </div>
@@ -41,40 +40,23 @@ export default function Work() {
                 </div>
                 <div className={"grid md:grid-cols-3 gap-4 w-full"}>
                     <Project
-                        title={"Integrating Algolia Search with WordPress Multisite"}
-                        description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}
-                        links={{"fab fa-github": "", "fas fa-external-link": ""}}
-                        tags={["Angolia", "Wordpress", "PHP"]}
+                        title={"SysMon's Backend Server"}
+                        description={"SysMon applications backend server made with Python. "}
+                        links={{"fab fa-github": "https://github.com/ishwarjagdale/sys.mon"}}
+                        tags={["Python-Flask", "Threading", "Postgres", "Sockets", "REST"]}
                     />
                     <Project
-                        title={"Integrating Algolia Search with WordPress Multisite"}
-                        description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}
-                        links={{"fab fa-github": "", "fas fa-external-link": ""}}
-                        tags={["Angolia", "Wordpress", "PHP"]}
+                        title={"Docket - Cloud based note application"}
+                        description={"A simple & secure note taking application with ExpressJS backend connected with Postgres SQL."}
+                        links={{"fab fa-github": "https://github.com/ishwarjagdale/docket"}}
+                        tags={["React", "Express", "Postgres"]}
                     />
                     <Project
-                        title={"Integrating Algolia Search with WordPress Multisite"}
-                        description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}
-                        links={{"fab fa-github": "", "fas fa-external-link": ""}}
-                        tags={["Angolia", "Wordpress", "PHP"]}
+                        title={"Apple Airpods Website Clone"}
+                        description={"An attempt to clone Apple's airpods animation by applying lottie animation on a custom a 3D phone model."}
+                        links={{"fab fa-github": "https://github.com/ishwarjagdale/lottie-animation", "fas fa-external-link": "https://ishwarjagdale.github.io/lottie-animation"}}
+                        tags={["Lottie Animation", "Javascript", "CSS"]}
                     />
-                    <Project
-                        title={"Integrating Algolia Search with WordPress Multisite"}
-                        description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}
-                        links={{"fab fa-github": "", "fas fa-external-link": ""}}
-                        tags={["Angolia", "Wordpress", "PHP"]}
-                    />
-                    <Project
-                        title={"Integrating Algolia Search with WordPress Multisite"}
-                        description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}
-                        links={{"fab fa-github": "", "fas fa-external-link": ""}}
-                        tags={["Angolia", "Wordpress", "PHP"]}
-                    /><Project
-                    title={"Integrating Algolia Search with WordPress Multisite"}
-                    description={"Building a custom multisite compatible WordPress plugin to build global search with Algolia"}
-                    links={{"fab fa-github": "", "fas fa-external-link": ""}}
-                    tags={["Angolia", "Wordpress", "PHP"]}
-                />
                 </div>
             </div>
         </>
