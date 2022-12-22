@@ -60,7 +60,7 @@ export default function Experience() {
         <>
             <div className={"flex flex-col text-left items-center max-w-[1000px] pt-16 pb-32 w-full"}>
                 <div className={"flex items-center w-full header-line pb-16"}>
-                    <span className={"accent mr-4 text-xl font-monospace"}>02.</span><span className={"text-2xl whitespace-nowrap slate font-Poppins font-[600]"}>Experience & Achievements</span>
+                    <span className={"accent mr-4 text-xl font-monospace"}>02.</span><span className={"text-[22px] whitespace-nowrap slate font-Poppins font-[600]"}>Experience & Achievements</span>
                 </div>
                 <p className={"dark-slate w-full mb-2 leading-7"}>
                     As in 2022, I have almost 5-6 years of non-professional experience. I'm a self-learned programmer, Python, HTML & CSS being my initial stack I further learned C, Java, JavaScript, and SQl.
