@@ -1,8 +1,11 @@
 export default function FeaturedProject({image, title, description, tags, links, orientation=1}) {
     return (
         <div className={"flex items-center w-full relative h-[436px] mb-[100px] border border-slate-700 md:border-0 drop-shadow md:drop-shadow-none"}>
-            <img src={image} className={`absolute ${orientation ? "left-0" : "right-0"} h-full md:h-auto md:w-full blur-sm brightness-50 md:brightness-100 md:blur-0 object-cover md:object-contain md:max-w-[60%] drop-shadow`} alt={"Hal"}/>
-            <div className={`flex flex-col p-8 md:p-0 z-10 ${orientation ? "md:items-end" : "md:items-start"} w-full`}>
+            <div className={`md:max-w-[60%] absolute ${orientation ? "left-0" : "right-0"} h-full md:h-auto md:w-full`}>
+                <div className={"w-full h-full absolute top-0 bg-black opacity-40 brightness-50 hover:hidden z-10"} />
+                <img src={image} className={`blur-sm brightness-50 h-full md:brightness-100 md:blur-0 object-cover md:object-contain drop-shadow-2xl`} alt={"Hal"}/>
+            </div>
+            <div className={`flex flex-col p-8 md:p-0 z-10 ${orientation ? "ml-auto md:items-end" : "md:items-start"} w-full md:w-fit`}>
                 <span className={"font-monospace text-sm cursor-default accent mb-2"}>Featured Project</span>
                 <a href={Object.values(links)[0]}><h3 className={"cursor-pointer slate hover-accent text-2xl font-[600]"}>{title}</h3></a>
                 <p className={`cursor-default md:bg-[#112240] rounded py-6 md:px-6 max-w-[500px] dark-slate text-[15px] ${orientation ? "md:text-right" : "md:text-left"} my-4 drop-shadow-xl`}>
