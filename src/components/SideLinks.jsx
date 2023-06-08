@@ -12,7 +12,10 @@ export default function SideLinks() {
                 <li className={"py-2 pb-4"}><a href={"https://www.hackerrank.com/ishwarjagdale"} target={"_blank"} className={"hover-accent hover-displace fab fa-hackerrank"} rel="noreferrer" /></li>
             </ul>
             <div className={"slate hidden xl:flex flex-col fixed bottom-0 right-0 items-center px-14 after-line w-fit"}>
-                <a href={"mailto:ishwarjagdale50@gmail.com"} className={"vertical-text text-sm hover-accent pb-4 hover-displace cursor-pointer font-monospace opacity-60 font-medium tracking-widest"}>ishwarjagdale50@gmail.com</a>
+                <a href={"mailto:ishwarjagdale50@gmail.com"} className={"flex flex-col items-center hover-accent pb-4 hover-displace cursor-pointer font-monospace font-medium tracking-widest"}>
+                    <span className={"pb-2 text-xl"}>@</span>
+                    <span className={"vertical-text opacity-60 text-sm"}>ishwarjagdale50@gmail.com</span>
+                </a>
             </div>
         </>
     )
