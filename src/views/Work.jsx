@@ -1,4 +1,5 @@
 import SysMon from "../images/projects/dashboard.png"
+import SmartScan from "../images/projects/SmartScan.png"
 import Journal from "../images/projects/journal.png"
 import FeaturedProject from "../components/FeaturedProjects";
 import Project from "../components/Projects";
@@ -7,6 +8,13 @@ import {useState} from "react";
 export default function Work() {
 
     const [projects, setProjects] = useState([
+        {
+            name: "Smart Scan",
+            description: "A web application which shows authentic history of monuments gathered from government officials. The history is provided in 26 international languages with audios. The tourists are supposed to scan the QR code present at the monuments which will take them to a specific page made for that particular monument. This application was made for the tourism of Aurangabad city in Maharashtra with the help of Smart City Aurangabad.",
+            tags: ["Python-Flask", "React", "Tailwind"],
+            links: {"fab fa-github": "https://github.com/ishwarjagdale/G20-scapp", "fas fa-external-link": "https://proto-scapp.pages.dev/"},
+            image: SmartScan
+        },
         {
             name: "SysMon - System Monitoring Tool",
             description: "A system monitoring tool which works in a network or over internet. It looks over available system resources' performance, generate logs and alerts user on any abnormality.",

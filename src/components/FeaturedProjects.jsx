@@ -8,7 +8,7 @@ export default function FeaturedProject({image, title, description, tags, links,
             <div className={`flex flex-col p-8 md:p-0 z-10 ${orientation ? "ml-auto md:items-end" : "md:items-start"} w-full md:w-fit`}>
                 <span className={"font-monospace text-sm cursor-default accent mb-2"}>Featured Project</span>
                 <a href={Object.values(links)[0]}><h3 className={"cursor-pointer slate hover-accent text-2xl font-[600]"}>{title}</h3></a>
-                <p className={`cursor-default md:bg-[#112240] rounded py-6 md:px-6 max-w-[500px] dark-slate text-[15px] ${orientation ? "md:text-right" : "md:text-left"} my-4 drop-shadow-xl`}>
+                <p className={`cursor-default md:bg-[#112240] rounded py-6 md:px-6 max-w-[500px] dark-slate text-[15px]  text-justify my-4 drop-shadow-xl`}>
                     {description}
                 </p>
                 <ul className={"flex flex-wrap cursor-default max-w-[500px] items-center text-sm my-1 dark-slate font-monospace whitespace-nowrap"}>
@@ -22,7 +22,7 @@ export default function FeaturedProject({image, title, description, tags, links,
                     {
                         Object.keys(links).map((l, i) => {
                             // eslint-disable-next-line jsx-a11y/anchor-has-content
-                            return <a key={i} href={links[l]} className={`hover-accent mr-6 ${l} ${i === (!orientation ? 0 : Object.keys(links).length - 1) ? "md:mr-0" : "md:mx-6"}`}/>
+                            return <a key={i} target={"_blank"} href={links[l]} className={`hover-accent mr-6 ${l} ${i === (!orientation ? 0 : Object.keys(links).length - 1) ? "md:mr-0" : "md:mx-6"}`}/>
                         })
                     }
                 </div>
