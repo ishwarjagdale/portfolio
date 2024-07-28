@@ -17,7 +17,7 @@ export default function Navigation() {
                     <li className={"py-3 md:px-4 md:py-0"}><a className={"hover-accent"} href={"/work"}><span className={"mr-2 accent"}>03.</span><span>Work</span></a></li>
                     <li className={"py-3 md:px-4 md:py-0"}><a className={"hover-accent"} href={"/contact"}><span className={"mr-2 accent"}>04.</span><span>Contact</span></a></li>
                 </ul>
-                <a href={"/Resume.pdf"} target={"_blank"} className={"mt-10 w-full md:w-fit max-w-md md:mt-0 p-2 px-4 rounded cursor-pointer hover-btn accent accent-border text-sm border font-monospace"} rel="noreferrer">Resume</a>
+                <a href={"/Ishwar-Jagdale.pdf"} target={"_blank"} className={"mt-10 w-full md:w-fit max-w-md md:mt-0 p-2 px-4 rounded cursor-pointer hover-btn accent accent-border text-sm border font-monospace"} rel="noreferrer">Resume</a>
             </div>
             <i onClick={() => setSideMenu(!sideMenu)} className={`cursor-pointer fas fa-${sideMenu ? "close" : "bars-staggered"} z-[100] w-[20px] text-center text-xl md:hidden`} />
         </nav>
